@@ -60,15 +60,23 @@ These IMUs exhibit differences in:
 
 ---
 
-## **Data Format**  
+## Data Format  
 
-The dataset is provided in CSV format, with the following structure:  
+The dataset is provided in **CSV format**, containing synchronized sensor readings from both **low-grade** and **high-grade** IMUs.  
 
-| Timestamp | Low_Acc_X (m/s²) | Low_Acc_Y (m/s²) | Low_Acc_Z (m/s²) | Low_Gyro_X (°/s) | Low_Gyro_Y (°/s) | Low_Gyro_Z (°/s) | Low_Mag_X (µT) | Low_Mag_Y (µT) | Low_Mag_Z (µT) | High_Acc_X (m/s²) | High_Acc_Y (m/s²) | High_Acc_Z (m/s²) | High_Gyro_X (°/s) | High_Gyro_Y (°/s) | High_Gyro_Z (°/s) | High_Mag_X (µT) | High_Mag_Y (µT) | High_Mag_Z (µT) |    
-|-----------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-----------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|-------------|    
-| 0.001s    | 0.12       | -0.05       | 9.81        | 0.02        | -0.01       | 0.03        | 45.2        | -30.1       | 12.7        | 0.001s    | 0.12       | -0.05       | 9.81        | 0.002        | -0.001       | 0.003        | 45.2        | -30.1       | 12.7        |   
+- **Timestamp**  
+- **Accelerometer Data** (X, Y, Z) [m/s²]  
+- **Gyroscope Data** (X, Y, Z) [°/s]  
+- **Magnetometer Data** (X, Y, Z) [µT] 
 
----
+### **CSV Structure**  
+
+|Timestamp|Low_Acc_X|Low_Acc_Y|Low_Acc_Z|Low_Gyro_X|Low_Gyro_Y|Low_Gyro_Z|Low_Mag_X|Low_Mag_Y|Low_Mag_Z|High_Acc_X|High_Acc_Y|High_Acc_Z|High_Gyro_X|High_Gyro_Y|High_Gyro_Z|High_Mag_X|High_Mag_Y|High_Mag_Z|    
+|---------|---------|---------|---------|----------|----------|----------|---------|---------|---------|----------|----------|----------|-----------|-----------|-----------|----------|----------|----------|   
+| 0.001s  | 0.12    | -0.05   | 9.81    | 0.02     | -0.01    |  0.03    |  45.2   |  -30.1  |  12.7   |  0.12    |  -0.05   |  9.81    |  0.002    |  -0.001   |   0.003   |   45.2   |  -30.1   |   12.7   |   
+
+Each row represents an IMU reading at a specific timestamp, with corresponding data from both **low-grade** and **high-grade** IMUs.  
+
 
 ## **Applications**  
 
@@ -79,6 +87,6 @@ This dataset can be used for:
 
 ---
 
-## **License**  
+## Citation  
 
-This dataset is made available under the **[
+If you use this dataset in your research, please cite it as follows:  
