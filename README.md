@@ -58,6 +58,12 @@ These IMUs exhibit differences in:
 ### **High-Grade (Industrial-Grade) IMU**  
 - **VN100 IMU/AHRS** (VectorNav)  
 
+# Data Acquisition Setup  
+
+![IMU Dataset Overview](images/imu_dataset_banner.png)  
+
+*Figure 1: A combination of multiple low grade heteroginous Inertial Measurement Unit with centered high grade data collection setup*  
+
 ---
 
 ## Data Format  
@@ -95,3 +101,7 @@ If you use this dataset in your research, please cite it as follows:
 1. MATLAB "https://in.mathworks.com/help/nav/ref/imusensor-system-object.html"
 2. VectoNav VN310 "https://www.vectornav.com/products/detail/vn-310"
 3. TDK InvenSense ICM-20948 Datasheet "https://invensense.tdk.com/download-pdf/icm-20948-datasheet/"
+4. S. Grover, C. Sahu and S. Poddar, "Linear Likelihood Approach-Based Adaptive Fusion of Heterogeneous Multiple IMUs for Orientation Estimation," in IEEE Sensors Journal, vol. 24, no. 15, pp. 24512-24519, 1 Aug.1, 2024, doi: 
+   10.1109/JSEN.2024.3405550.
+
+
