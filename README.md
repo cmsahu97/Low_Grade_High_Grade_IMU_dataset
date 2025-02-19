@@ -90,3 +90,8 @@ This dataset can be used for:
 ## Citation  
 
 If you use this dataset in your research, please cite it as follows:  
+
+## Reference
+1. MATLAB "https://in.mathworks.com/help/nav/ref/imusensor-system-object.html"
+2. VectoNav VN310 "https://www.vectornav.com/products/detail/vn-310"
+3. TDK InvenSense ICM-20948 Datasheet "https://invensense.tdk.com/download-pdf/icm-20948-datasheet/"
