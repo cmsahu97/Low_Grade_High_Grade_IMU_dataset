@@ -58,9 +58,9 @@ These IMUs exhibit differences in:
 ### **High-Grade (Industrial-Grade) IMU**  
 - **VN100 IMU/AHRS** (VectorNav)  
 
-# Data Acquisition Setup  
+### Data Acquisition Setup  
 
-![IMU Dataset Overview](images/imu_dataset_banner.png)  
+![Setup](imu_dataset_banner.png)  
 
 *Figure 1: A combination of multiple low grade heteroginous Inertial Measurement Unit with centered high grade data collection setup*  
 
