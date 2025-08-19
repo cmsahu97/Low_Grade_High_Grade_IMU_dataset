@@ -1,4 +1,4 @@
-# Low-Grade & High-Grade IMU Dataset  
+# Low-Grade & High-Grade IMU Dataset for End-to-End Mapping
 
 This repository provides an **Inertial Measurement Unit (IMU) dataset** for different grading levels. It includes both **synthetic** and **real-world** IMU data collected under various scenarios.  
 
@@ -17,52 +17,29 @@ The synthetic dataset is created using MATLAB and includes various motion scenar
 - **Dynamic motion conditions**  
 
 ### **Low-Grade Synthetic IMU**  
-This dataset is generated based on sensor model parameters, including:  
-- **Noise Density**  
-- **Bias Instability**  
-- **Random Walk**  
-- **Constant Bias**  
-- **Axes Misalignment**  
+This dataset is generated based on sensor model parameters, including Noise Density, Bias Instability (Custom), Random
+Walk, Constant Bias, and Axes Misalignment at 100 HZ sampling frequency
 
-The data is derived from the consumer-grade **ICM-20948** IMU by **TDK InvenSense**.  
-
-- **IMU Model**: ICM-20948 (TDK InvenSense)  
-
+The data is derived from the consumer-grade **ICM-20948** IMU by **TDK InvenSense** and is named as IMU-low in the paper.  
+ 
 ### **High-Grade Synthetic IMU**  
-Similar sensor parameters are used for a high-grade (tactical-grade) inertial sensor:  
-- **Noise Density**  
-- **Bias Instability**  
-- **Random Walk**  
-- **Constant Bias**  
-- **Axes Misalignment**  
+Similar sensor parameters are used for a high-grade (tactical grade) inertial sensor: Noise Density, Bias Instability, Random Walk, Constant Bias, Axes 
 
-This data is based on the **VN-310 DUAL GNSS / INS** from **VectorNav**.  
-
-- **IMU Model**: VN-310 DUAL GNSS / INS (VectorNav)  
+This data is based on the **VN-310 DUAL GNSS / INS** from **VectorNav** and is named as IMU-high in the paper.  
 
 ---
 
 ## **Real Sensor Data**  
-
+The real sensor data is captured at 40 Hz sampling frequency. 
 ### **Low-Grade (Consumer-Grade) IMUs**  
-The dataset includes a heterogeneous set of three low-cost MEMS-based IMUs:  
+The dataset includes a heterogeneous set of three low-cost MEMS-based IMUs. These IMUs exhibit differences in:
+Noise levels, Drift and bias, and Temperature dependencies and are
 - **BMX160** (Bosch)  
 - **MPU9250** (TDK InvenSense)  
 - **LSM9DS1** (STMicroelectronics)  
 
-These IMUs exhibit differences in:  
-- Noise levels  
-- Drift and bias  
-- Temperature dependencies  
-
 ### **High-Grade (Industrial-Grade) IMU**  
 - **VN100 IMU/AHRS** (VectorNav)  
-
-### Data Acquisition Setup  
-
-![Setup](imu_dataset_banner.png)  
-
-*Figure 1: A combination of multiple low grade heteroginous Inertial Measurement Unit with centered high grade data collection setup*  
 
 ---
 
@@ -84,24 +61,16 @@ The dataset is provided in **CSV format**, containing synchronized sensor readin
 Each row represents an IMU reading at a specific timestamp, with corresponding data from both **low-grade** and **high-grade** IMUs.  
 
 
-## **Applications**  
-
-This dataset can be used for:  
-- **Sensor Fusion & Calibration**  
-- **Machine Learning for Motion Tracking**  
-- **Inertial Navigation System (INS) Research**  
 
 ---
 
 ## Citation  
 
-If you use this dataset in your research, please cite it as follows:  
+If you use this dataset in your research, please cite our research paper. 
 
 ## Reference
 1. MATLAB "https://in.mathworks.com/help/nav/ref/imusensor-system-object.html"
 2. VectoNav VN310 "https://www.vectornav.com/products/detail/vn-310"
 3. TDK InvenSense ICM-20948 Datasheet "https://invensense.tdk.com/download-pdf/icm-20948-datasheet/"
-4. S. Grover, C. Sahu and S. Poddar, "Linear Likelihood Approach-Based Adaptive Fusion of Heterogeneous Multiple IMUs for Orientation Estimation," in IEEE Sensors Journal, vol. 24, no. 15, pp. 24512-24519, 1 Aug.1, 2024, doi: 
-   10.1109/JSEN.2024.3405550.
 
 
