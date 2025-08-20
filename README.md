@@ -66,7 +66,7 @@ Each row represents an IMU reading at a specific timestamp, with corresponding d
 
 ## Citation  
 
-If you use this dataset in your research, please cite our research paper. Chudamani Sahu, Shashi Poddar, ALiMU: an end-to-end mapping framework for advanced low-grade inertial measurement units, Measurement, 2025, 118736, ISSN 0263-2241, https://doi.org/10.1016/j.measurement.2025.118736.
+If you use this dataset in your research, please cite our research paper. C. Sahu, S. Poddar, ALiMU: an end-to-end mapping framework for advanced low-grade inertial measurement units, Measurement, 2025, 118736, ISSN 0263-2241, https://doi.org/10.1016/j.measurement.2025.118736.
 
 ## Reference
 1. MATLAB "https://in.mathworks.com/help/nav/ref/imusensor-system-object.html"
