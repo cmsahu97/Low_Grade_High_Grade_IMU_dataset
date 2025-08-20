@@ -1,4 +1,4 @@
-#ALiMU Low-Grade & High-Grade IMU Dataset for End-to-End Mapping
+# ALiMU Low-Grade & High-Grade IMU Dataset for End-to-End Mapping
 
 This repository provides an **Inertial Measurement Unit (IMU) dataset** for different grading levels. It includes both **synthetic** and **real-world** IMU data collected under various scenarios.  
 
